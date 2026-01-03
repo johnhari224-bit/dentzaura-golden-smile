@@ -25,7 +25,7 @@ const Navbar = () => {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         isScrolled
-          ? "bg-background/95 backdrop-blur-md border-b border-border shadow-lg"
+          ? "bg-card/95 backdrop-blur-md border-b border-border shadow-lg"
           : "bg-transparent"
       }`}
     >
@@ -35,7 +35,7 @@ const Navbar = () => {
           <a href="#home" className="flex items-center gap-2">
             <span className="font-display text-2xl font-bold">
               <span className="text-foreground">Dentz</span>
-              <span className="text-gradient-gold">Aura</span>
+              <span className="text-gradient-blue">Aura</span>
             </span>
           </a>
 
@@ -54,12 +54,12 @@ const Navbar = () => {
 
           {/* CTA Button */}
           <div className="hidden lg:flex items-center gap-4">
-            <a href="tel:+917738943718" className="flex items-center gap-2 text-accent">
+            <a href="tel:+917738943718" className="flex items-center gap-2 text-primary">
               <Phone className="w-4 h-4" />
               <span className="font-medium">077389 43718</span>
             </a>
             <a href="tel:+917738943718">
-              <Button variant="gold" size="lg">
+              <Button variant="hero" size="lg">
                 Book Appointment
               </Button>
             </a>
@@ -81,7 +81,7 @@ const Navbar = () => {
           isMobileMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-        <div className="bg-background/95 backdrop-blur-md border-b border-border px-4 py-6 space-y-4">
+        <div className="bg-card/95 backdrop-blur-md border-b border-border px-4 py-6 space-y-4">
           {navLinks.map((link) => (
             <a
               key={link.href}
@@ -93,7 +93,7 @@ const Navbar = () => {
             </a>
           ))}
           <a href="tel:+917738943718" className="block">
-            <Button variant="gold" size="lg" className="w-full mt-4">
+            <Button variant="hero" size="lg" className="w-full mt-4">
               <Phone className="w-4 h-4 mr-2" />
               Call: 077389 43718
             </Button>

@@ -10,12 +10,12 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>DentzAura | Premium Dental Clinic in Bandra West, Mumbai</title>
+        <title>DentzAura | Dr. Aiman Shaikh | Dental Clinic in Bandra West, Mumbai</title>
         <meta 
           name="description" 
-          content="DentzAura dental clinic in Bandra West, Mumbai. Cosmetic dentistry, dental implants, teeth whitening & more. Call 077389 43718 to book your appointment." 
+          content="DentzAura dental clinic by Dr. Aiman Shaikh in Bandra West, Mumbai. Emergency services, pediatric care, cosmetic dentistry. 5-star rated. Call 077389 43718." 
         />
-        <meta name="keywords" content="dental clinic, dentist, Bandra West, Mumbai, cosmetic dentistry, teeth whitening, dental implants" />
+        <meta name="keywords" content="dental clinic, dentist Bandra West, Dr Aiman Shaikh, Mumbai dentist, emergency dental, pediatric dentistry, cosmetic dentistry" />
       </Helmet>
       
       <main className="min-h-screen bg-background">
