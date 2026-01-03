@@ -1,13 +1,34 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Helmet } from "react-helmet-async";
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import Services from "@/components/Services";
+import About from "@/components/About";
+import Testimonials from "@/components/Testimonials";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <>
+      <Helmet>
+        <title>DentzAura | Premium Dental Care in Beverly Hills</title>
+        <meta 
+          name="description" 
+          content="Experience world-class dentistry at DentzAura. Cosmetic dentistry, dental implants, teeth whitening & more. Book your consultation today." 
+        />
+        <meta name="keywords" content="dental clinic, dentist, cosmetic dentistry, teeth whitening, dental implants, Beverly Hills" />
+      </Helmet>
+      
+      <main className="min-h-screen bg-background">
+        <Navbar />
+        <Hero />
+        <Services />
+        <About />
+        <Testimonials />
+        <Contact />
+        <Footer />
+      </main>
+    </>
   );
 };
 
