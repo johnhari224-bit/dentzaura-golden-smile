@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Sparkles, ArrowRight } from "lucide-react";
+import { Sparkles, Phone, MapPin } from "lucide-react";
 import heroImage from "@/assets/hero-dental.jpg";
 
 const Hero = () => {
@@ -12,7 +12,7 @@ const Hero = () => {
       <div className="absolute inset-0">
         <img
           src={heroImage}
-          alt="Luxury dental clinic interior"
+          alt="DentzAura dental clinic interior"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-background via-background/90 to-background/70" />
@@ -32,7 +32,7 @@ const Hero = () => {
             style={{ animationDelay: "0.2s" }}
           >
             <Sparkles className="w-4 h-4 text-accent" />
-            <span className="text-sm font-medium text-foreground">Premium Dental Care</span>
+            <span className="text-sm font-medium text-foreground">Premium Dental Care in Bandra West</span>
           </div>
 
           {/* Main Heading */}
@@ -60,32 +60,28 @@ const Hero = () => {
             className="flex flex-col sm:flex-row gap-4 opacity-0 animate-fade-in"
             style={{ animationDelay: "0.8s" }}
           >
-            <Button variant="gold" size="xl" className="group">
-              Book Your Visit
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
-            <Button variant="heroOutline" size="xl">
-              Explore Services
-            </Button>
+            <a href="tel:+917738943718">
+              <Button variant="gold" size="xl" className="group">
+                <Phone className="w-5 h-5 mr-2" />
+                Call Now: 077389 43718
+              </Button>
+            </a>
+            <a href="#services">
+              <Button variant="heroOutline" size="xl">
+                Explore Services
+              </Button>
+            </a>
           </div>
 
-          {/* Stats */}
+          {/* Location Info */}
           <div 
-            className="grid grid-cols-3 gap-8 mt-16 pt-8 border-t border-border/50 opacity-0 animate-fade-in"
+            className="flex items-center gap-3 mt-10 pt-8 border-t border-border/50 opacity-0 animate-fade-in"
             style={{ animationDelay: "1s" }}
           >
-            <div>
-              <p className="font-display text-3xl md:text-4xl font-bold text-gradient-gold">15+</p>
-              <p className="text-sm text-muted-foreground mt-1">Years Experience</p>
-            </div>
-            <div>
-              <p className="font-display text-3xl md:text-4xl font-bold text-gradient-gold">10K+</p>
-              <p className="text-sm text-muted-foreground mt-1">Happy Patients</p>
-            </div>
-            <div>
-              <p className="font-display text-3xl md:text-4xl font-bold text-gradient-gold">25+</p>
-              <p className="text-sm text-muted-foreground mt-1">Expert Dentists</p>
-            </div>
+            <MapPin className="w-5 h-5 text-accent" />
+            <p className="text-muted-foreground">
+              Bandra West, Mumbai · Open until 8 PM
+            </p>
           </div>
         </div>
       </div>

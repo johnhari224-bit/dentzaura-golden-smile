@@ -18,7 +18,6 @@ const Navbar = () => {
     { href: "#home", label: "Home" },
     { href: "#services", label: "Services" },
     { href: "#about", label: "About" },
-    { href: "#testimonials", label: "Testimonials" },
     { href: "#contact", label: "Contact" },
   ];
 
@@ -55,13 +54,15 @@ const Navbar = () => {
 
           {/* CTA Button */}
           <div className="hidden lg:flex items-center gap-4">
-            <a href="tel:+1234567890" className="flex items-center gap-2 text-accent">
+            <a href="tel:+917738943718" className="flex items-center gap-2 text-accent">
               <Phone className="w-4 h-4" />
-              <span className="font-medium">(123) 456-7890</span>
+              <span className="font-medium">077389 43718</span>
             </a>
-            <Button variant="gold" size="lg">
-              Book Appointment
-            </Button>
+            <a href="tel:+917738943718">
+              <Button variant="gold" size="lg">
+                Book Appointment
+              </Button>
+            </a>
           </div>
 
           {/* Mobile Menu Toggle */}
@@ -91,9 +92,12 @@ const Navbar = () => {
               {link.label}
             </a>
           ))}
-          <Button variant="gold" size="lg" className="w-full mt-4">
-            Book Appointment
-          </Button>
+          <a href="tel:+917738943718" className="block">
+            <Button variant="gold" size="lg" className="w-full mt-4">
+              <Phone className="w-4 h-4 mr-2" />
+              Call: 077389 43718
+            </Button>
+          </a>
         </div>
       </div>
     </nav>

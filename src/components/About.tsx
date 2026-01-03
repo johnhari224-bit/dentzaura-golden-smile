@@ -1,21 +1,21 @@
-import { Award, Users, Clock, HeartHandshake } from "lucide-react";
+import { Award, Users, Clock, HeartHandshake, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const features = [
   {
     icon: Award,
-    title: "Award Winning",
-    description: "Recognized excellence in dental care",
+    title: "Quality Care",
+    description: "Excellence in dental treatments",
   },
   {
     icon: Users,
     title: "Expert Team",
-    description: "Board-certified specialists",
+    description: "Skilled dental professionals",
   },
   {
     icon: Clock,
-    title: "Flexible Hours",
-    description: "Evening & weekend appointments",
+    title: "Convenient Hours",
+    description: "Open until 8 PM",
   },
   {
     icon: HeartHandshake,
@@ -42,14 +42,8 @@ const About = () => {
                     <span className="font-display text-5xl font-bold text-gradient-gold">DA</span>
                   </div>
                   <p className="font-display text-2xl text-foreground mb-2">DentzAura</p>
-                  <p className="text-muted-foreground">Excellence in Every Smile</p>
+                  <p className="text-muted-foreground">Bandra West, Mumbai</p>
                 </div>
-              </div>
-              
-              {/* Floating Stats Card */}
-              <div className="absolute -bottom-6 -right-6 bg-card border border-border rounded-2xl p-6 shadow-lg">
-                <p className="font-display text-4xl font-bold text-gradient-gold mb-1">98%</p>
-                <p className="text-sm text-muted-foreground">Patient Satisfaction</p>
               </div>
             </div>
             
@@ -66,11 +60,11 @@ const About = () => {
             </h2>
             <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
               At DentzAura, we believe exceptional dental care goes beyond technical expertise. 
-              Our state-of-the-art facility combines the latest technology with a warm, 
+              Our clinic combines the latest technology with a warm, 
               patient-centered approach to create an experience unlike any other.
             </p>
             <p className="text-muted-foreground text-lg mb-10 leading-relaxed">
-              Founded by leading dental professionals, we've built a practice where every 
+              Located in the heart of Bandra West, Mumbai, we've built a practice where every 
               patient feels valued, heard, and confident in their care. Your smile is our passion.
             </p>
 
@@ -89,9 +83,12 @@ const About = () => {
               ))}
             </div>
 
-            <Button variant="hero" size="lg">
-              Meet Our Team
-            </Button>
+            <a href="tel:+917738943718">
+              <Button variant="hero" size="lg">
+                <Phone className="w-4 h-4 mr-2" />
+                Call to Book: 077389 43718
+              </Button>
+            </a>
           </div>
         </div>
       </div>
