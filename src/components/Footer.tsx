@@ -12,10 +12,10 @@ const Footer = () => {
 
   const services = [
     "Cosmetic Dentistry",
-    "Teeth Whitening",
+    "Emergency Services",
+    "Pediatric Care",
     "Dental Implants",
-    "Orthodontics",
-    "Preventive Care",
+    "Teeth Whitening",
   ];
 
   return (
@@ -26,7 +26,7 @@ const Footer = () => {
           <div>
             <h3 className="font-display text-2xl font-bold mb-4">
               <span className="text-foreground">Dentz</span>
-              <span className="text-gradient-gold">Aura</span>
+              <span className="text-gradient-blue">Aura</span>
             </h3>
             <p className="text-muted-foreground mb-6 leading-relaxed">
               Where precision meets compassion. Experience premium dental care designed 
@@ -34,7 +34,7 @@ const Footer = () => {
             </p>
             <a 
               href="tel:+917738943718" 
-              className="inline-flex items-center gap-2 text-accent font-semibold hover:text-accent/80 transition-colors"
+              className="inline-flex items-center gap-2 text-primary font-semibold hover:text-primary/80 transition-colors"
             >
               <Phone className="w-5 h-5" />
               077389 43718
@@ -49,7 +49,7 @@ const Footer = () => {
                 <li key={link.label}>
                   <a
                     href={link.href}
-                    className="text-muted-foreground hover:text-accent transition-colors duration-300"
+                    className="text-muted-foreground hover:text-primary transition-colors duration-300"
                   >
                     {link.label}
                   </a>
@@ -66,7 +66,7 @@ const Footer = () => {
                 <li key={service}>
                   <a
                     href="#services"
-                    className="text-muted-foreground hover:text-accent transition-colors duration-300"
+                    className="text-muted-foreground hover:text-primary transition-colors duration-300"
                   >
                     {service}
                   </a>
@@ -80,15 +80,15 @@ const Footer = () => {
             <h4 className="font-semibold text-foreground mb-6">Contact Info</h4>
             <ul className="space-y-4 text-muted-foreground">
               <li className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                <MapPin className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                 <span>De Joss Apartment, Ice factory lane, Hill Rd, near trios, Bandra West, Mumbai 400050</span>
               </li>
               <li className="flex items-center gap-3">
-                <Clock className="w-5 h-5 text-accent flex-shrink-0" />
+                <Clock className="w-5 h-5 text-primary flex-shrink-0" />
                 <span>Open · Closes 8 PM</span>
               </li>
               <li>
-                <a href="tel:+917738943718" className="flex items-center gap-3 text-accent hover:text-accent/80 transition-colors">
+                <a href="tel:+917738943718" className="flex items-center gap-3 text-primary hover:text-primary/80 transition-colors">
                   <Phone className="w-5 h-5 flex-shrink-0" />
                   <span className="font-semibold">077389 43718</span>
                 </a>

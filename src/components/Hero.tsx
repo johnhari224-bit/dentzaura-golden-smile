@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Sparkles, Phone, MapPin } from "lucide-react";
+import { Sparkles, Phone, MapPin, Star } from "lucide-react";
 import heroImage from "@/assets/hero-dental.jpg";
 
 const Hero = () => {
@@ -15,7 +15,7 @@ const Hero = () => {
           alt="DentzAura dental clinic interior"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/90 to-background/70" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/95 to-background/80" />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
       </div>
 
@@ -28,11 +28,15 @@ const Hero = () => {
         <div className="max-w-3xl">
           {/* Badge */}
           <div 
-            className="inline-flex items-center gap-2 bg-secondary/80 backdrop-blur-sm border border-border rounded-full px-4 py-2 mb-8 animate-fade-in"
+            className="inline-flex items-center gap-2 bg-card/80 backdrop-blur-sm border border-border rounded-full px-4 py-2 mb-8 animate-fade-in"
             style={{ animationDelay: "0.2s" }}
           >
-            <Sparkles className="w-4 h-4 text-accent" />
-            <span className="text-sm font-medium text-foreground">Premium Dental Care in Bandra West</span>
+            <div className="flex items-center gap-1">
+              {[...Array(5)].map((_, i) => (
+                <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+              ))}
+            </div>
+            <span className="text-sm font-medium text-foreground">5.0 Rating · 23 Google Reviews</span>
           </div>
 
           {/* Main Heading */}
@@ -41,19 +45,29 @@ const Hero = () => {
             style={{ animationDelay: "0.4s" }}
           >
             Your Smile,{" "}
-            <span className="text-gradient-gold">Perfected</span>
+            <span className="text-gradient-blue">Perfected</span>
             <br />
             <span className="text-primary">With Care</span>
           </h1>
 
           {/* Subtitle */}
           <p 
-            className="text-lg md:text-xl text-muted-foreground max-w-xl mb-10 opacity-0 animate-fade-in"
+            className="text-lg md:text-xl text-muted-foreground max-w-xl mb-6 opacity-0 animate-fade-in"
             style={{ animationDelay: "0.6s" }}
           >
-            Experience world-class dentistry in an environment designed for your comfort. 
-            Where cutting-edge technology meets compassionate care.
+            Dr. Aiman Shaikh · Precision & passion in every smile. 
+            Experience advanced dental technology with compassionate care.
           </p>
+
+          {/* Highlights */}
+          <div 
+            className="flex flex-wrap gap-3 mb-10 opacity-0 animate-fade-in"
+            style={{ animationDelay: "0.7s" }}
+          >
+            <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-medium">Emergency Services</span>
+            <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-medium">Pediatric Care</span>
+            <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-medium">Cosmetic Dentistry</span>
+          </div>
 
           {/* CTA Buttons */}
           <div 
@@ -61,7 +75,7 @@ const Hero = () => {
             style={{ animationDelay: "0.8s" }}
           >
             <a href="tel:+917738943718">
-              <Button variant="gold" size="xl" className="group">
+              <Button variant="hero" size="xl" className="group">
                 <Phone className="w-5 h-5 mr-2" />
                 Call Now: 077389 43718
               </Button>
@@ -78,7 +92,7 @@ const Hero = () => {
             className="flex items-center gap-3 mt-10 pt-8 border-t border-border/50 opacity-0 animate-fade-in"
             style={{ animationDelay: "1s" }}
           >
-            <MapPin className="w-5 h-5 text-accent" />
+            <MapPin className="w-5 h-5 text-primary" />
             <p className="text-muted-foreground">
               Bandra West, Mumbai · Open until 8 PM
             </p>
@@ -90,7 +104,7 @@ const Hero = () => {
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce">
         <span className="text-xs text-muted-foreground uppercase tracking-widest">Scroll</span>
         <div className="w-6 h-10 border-2 border-muted-foreground/50 rounded-full flex items-start justify-center p-2">
-          <div className="w-1 h-2 bg-accent rounded-full animate-pulse" />
+          <div className="w-1 h-2 bg-primary rounded-full animate-pulse" />
         </div>
       </div>
     </section>
