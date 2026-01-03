@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Twitter, Linkedin } from "lucide-react";
+import { Phone, MapPin, Clock } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -7,7 +7,6 @@ const Footer = () => {
     { label: "Home", href: "#home" },
     { label: "Services", href: "#services" },
     { label: "About Us", href: "#about" },
-    { label: "Testimonials", href: "#testimonials" },
     { label: "Contact", href: "#contact" },
   ];
 
@@ -17,13 +16,6 @@ const Footer = () => {
     "Dental Implants",
     "Orthodontics",
     "Preventive Care",
-  ];
-
-  const socialLinks = [
-    { icon: Facebook, href: "#" },
-    { icon: Instagram, href: "#" },
-    { icon: Twitter, href: "#" },
-    { icon: Linkedin, href: "#" },
   ];
 
   return (
@@ -40,17 +32,13 @@ const Footer = () => {
               Where precision meets compassion. Experience premium dental care designed 
               around your comfort and confidence.
             </p>
-            <div className="flex gap-3">
-              {socialLinks.map((social, index) => (
-                <a
-                  key={index}
-                  href={social.href}
-                  className="w-10 h-10 bg-secondary rounded-lg flex items-center justify-center hover:bg-primary transition-colors duration-300"
-                >
-                  <social.icon className="w-5 h-5 text-foreground" />
-                </a>
-              ))}
-            </div>
+            <a 
+              href="tel:+917738943718" 
+              className="inline-flex items-center gap-2 text-accent font-semibold hover:text-accent/80 transition-colors"
+            >
+              <Phone className="w-5 h-5" />
+              077389 43718
+            </a>
           </div>
 
           {/* Quick Links */}
@@ -90,11 +78,21 @@ const Footer = () => {
           {/* Contact */}
           <div>
             <h4 className="font-semibold text-foreground mb-6">Contact Info</h4>
-            <ul className="space-y-3 text-muted-foreground">
-              <li>123 Luxury Lane</li>
-              <li>Beverly Hills, CA 90210</li>
-              <li className="text-accent">(123) 456-7890</li>
-              <li className="text-accent">hello@dentzaura.com</li>
+            <ul className="space-y-4 text-muted-foreground">
+              <li className="flex items-start gap-3">
+                <MapPin className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                <span>De Joss Apartment, Ice factory lane, Hill Rd, near trios, Bandra West, Mumbai 400050</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <Clock className="w-5 h-5 text-accent flex-shrink-0" />
+                <span>Open · Closes 8 PM</span>
+              </li>
+              <li>
+                <a href="tel:+917738943718" className="flex items-center gap-3 text-accent hover:text-accent/80 transition-colors">
+                  <Phone className="w-5 h-5 flex-shrink-0" />
+                  <span className="font-semibold">077389 43718</span>
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -103,19 +101,9 @@ const Footer = () => {
       {/* Bottom Bar */}
       <div className="border-t border-border">
         <div className="container mx-auto px-4 lg:px-8 py-6">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-muted-foreground text-sm">
-              © {currentYear} DentzAura. All rights reserved.
-            </p>
-            <div className="flex gap-6">
-              <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                Privacy Policy
-              </a>
-              <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                Terms of Service
-              </a>
-            </div>
-          </div>
+          <p className="text-muted-foreground text-sm text-center">
+            © {currentYear} DentzAura. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>
