@@ -74,11 +74,6 @@ const Services = () => {
                 {service.description}
               </p>
 
-              {/* Hover Arrow */}
-              <div className="relative mt-6 flex items-center gap-2 text-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <span className="text-sm font-medium">Learn more</span>
-                <span className="group-hover:translate-x-2 transition-transform duration-300">→</span>
-              </div>
             </div>
           ))}
         </div>
