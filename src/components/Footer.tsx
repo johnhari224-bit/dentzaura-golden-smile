@@ -85,7 +85,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-3">
                 <Clock className="w-5 h-5 text-primary flex-shrink-0" />
-                <span>Open · Closes 8 PM</span>
+                <span>Mon–Sat: 10 AM – 8 PM · Sun: 10 AM – 2 PM</span>
               </li>
               <li>
                 <a href="tel:+917738943718" className="flex items-center gap-3 text-primary hover:text-primary/80 transition-colors">
