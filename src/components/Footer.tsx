@@ -1,4 +1,5 @@
 import { Phone, MapPin, Clock } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -24,10 +25,13 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div>
-            <h3 className="font-display text-2xl font-bold mb-4">
-              <span className="text-foreground">Dentz</span>
-              <span className="text-gradient-blue">Aura</span>
-            </h3>
+            <div className="flex items-center gap-3 mb-4">
+              <img src={logo} alt="DentzAura logo" className="h-12 w-12 object-contain" />
+              <h3 className="font-display text-2xl font-bold">
+                <span className="text-foreground">Dentz</span>
+                <span className="text-gradient-blue">Aura</span>
+              </h3>
+            </div>
             <p className="text-muted-foreground mb-6 leading-relaxed">
               Where precision meets compassion. Experience premium dental care designed 
               around your comfort and confidence.
