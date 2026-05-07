@@ -6,94 +6,94 @@
 
 @layer base {
   :root {
-    --background: 210 40% 98%;
-    --foreground: 215 25% 15%;
+    --background: 270 30% 97%;
+    --foreground: 270 40% 12%;
 
     --card: 0 0% 100%;
-    --card-foreground: 215 25% 15%;
+    --card-foreground: 270 40% 12%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 215 25% 15%;
+    --popover-foreground: 270 40% 12%;
 
-    --primary: 210 100% 45%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 270 65% 35%;
+    --primary-foreground: 45 90% 92%;
 
-    --secondary: 210 40% 96%;
-    --secondary-foreground: 215 25% 15%;
+    --secondary: 270 20% 95%;
+    --secondary-foreground: 270 40% 12%;
 
-    --muted: 210 40% 96%;
-    --muted-foreground: 215 15% 45%;
+    --muted: 270 20% 95%;
+    --muted-foreground: 270 15% 40%;
 
-    --accent: 210 100% 50%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 42 85% 55%;
+    --accent-foreground: 270 50% 15%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 210 30% 88%;
-    --input: 210 30% 88%;
-    --ring: 210 100% 45%;
+    --border: 270 20% 88%;
+    --input: 270 20% 88%;
+    --ring: 270 65% 40%;
 
     --radius: 0.75rem;
 
-    /* Custom tokens - Blue theme */
-    --blue-deep: 210 100% 35%;
-    --blue-glow: 210 100% 60%;
-    --blue-light: 210 100% 95%;
+    /* Custom tokens - Royal purple & gold */
+    --blue-deep: 270 70% 25%;
+    --blue-glow: 42 90% 60%;
+    --blue-light: 270 30% 95%;
 
     /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(210 40% 98%) 0%, hsl(210 50% 95%) 50%, hsl(210 40% 98%) 100%);
-    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(210 40% 98%) 100%);
-    --gradient-blue: linear-gradient(135deg, hsl(210 100% 45%) 0%, hsl(210 100% 60%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(270 30% 97%) 0%, hsl(45 50% 95%) 50%, hsl(270 30% 97%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(270 25% 97%) 100%);
+    --gradient-blue: linear-gradient(135deg, hsl(270 65% 35%) 0%, hsl(42 85% 55%) 100%);
 
     /* Shadows */
-    --shadow-blue: 0 4px 30px hsl(210 100% 45% / 0.2);
-    --shadow-soft: 0 4px 20px hsl(210 30% 50% / 0.1);
-    --shadow-card: 0 8px 32px hsl(210 30% 50% / 0.1);
+    --shadow-blue: 0 4px 30px hsl(270 65% 35% / 0.25);
+    --shadow-soft: 0 4px 20px hsl(270 30% 30% / 0.1);
+    --shadow-card: 0 8px 32px hsl(270 30% 30% / 0.12);
 
     --sidebar-background: 0 0% 100%;
-    --sidebar-foreground: 215 25% 15%;
-    --sidebar-primary: 210 100% 45%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 210 40% 96%;
-    --sidebar-accent-foreground: 215 25% 15%;
-    --sidebar-border: 210 30% 88%;
-    --sidebar-ring: 210 100% 45%;
+    --sidebar-foreground: 270 40% 12%;
+    --sidebar-primary: 270 65% 35%;
+    --sidebar-primary-foreground: 45 90% 92%;
+    --sidebar-accent: 270 20% 95%;
+    --sidebar-accent-foreground: 270 40% 12%;
+    --sidebar-border: 270 20% 88%;
+    --sidebar-ring: 270 65% 40%;
   }
 
   .dark {
-    --background: 215 30% 8%;
-    --foreground: 210 40% 98%;
-    --card: 215 30% 12%;
-    --card-foreground: 210 40% 98%;
-    --popover: 215 30% 12%;
-    --popover-foreground: 210 40% 98%;
-    --primary: 210 100% 55%;
-    --primary-foreground: 0 0% 100%;
-    --secondary: 215 25% 18%;
-    --secondary-foreground: 210 40% 98%;
-    --muted: 215 25% 18%;
-    --muted-foreground: 215 15% 55%;
-    --accent: 210 100% 60%;
-    --accent-foreground: 0 0% 100%;
+    --background: 270 35% 6%;
+    --foreground: 45 50% 95%;
+    --card: 270 35% 10%;
+    --card-foreground: 45 50% 95%;
+    --popover: 270 35% 10%;
+    --popover-foreground: 45 50% 95%;
+    --primary: 270 70% 50%;
+    --primary-foreground: 45 90% 95%;
+    --secondary: 270 25% 16%;
+    --secondary-foreground: 45 50% 95%;
+    --muted: 270 25% 16%;
+    --muted-foreground: 270 15% 60%;
+    --accent: 42 90% 60%;
+    --accent-foreground: 270 50% 10%;
     --destructive: 0 62% 50%;
     --destructive-foreground: 0 0% 100%;
-    --border: 215 25% 20%;
-    --input: 215 25% 20%;
-    --ring: 210 100% 55%;
+    --border: 270 25% 20%;
+    --input: 270 25% 20%;
+    --ring: 270 70% 55%;
 
-    /* Custom tokens - Blue theme dark */
-    --blue-deep: 210 100% 45%;
-    --blue-glow: 210 100% 65%;
-    --blue-light: 210 50% 20%;
+    /* Custom tokens - Royal purple & gold dark */
+    --blue-deep: 270 70% 40%;
+    --blue-glow: 42 95% 65%;
+    --blue-light: 270 30% 18%;
 
     /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(215 30% 8%) 0%, hsl(215 35% 12%) 100%);
-    --gradient-card: linear-gradient(180deg, hsl(215 30% 12%) 0%, hsl(215 30% 8%) 100%);
-    --gradient-blue: linear-gradient(135deg, hsl(210 100% 50%) 0%, hsl(210 100% 65%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(270 35% 6%) 0%, hsl(270 40% 10%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(270 35% 10%) 0%, hsl(270 35% 6%) 100%);
+    --gradient-blue: linear-gradient(135deg, hsl(270 70% 45%) 0%, hsl(42 90% 60%) 100%);
 
     /* Shadows */
-    --shadow-blue: 0 4px 30px hsl(210 100% 55% / 0.3);
+    --shadow-blue: 0 4px 30px hsl(270 70% 50% / 0.35);
     --shadow-soft: 0 4px 20px hsl(0 0% 0% / 0.2);
     --shadow-card: 0 8px 32px hsl(0 0% 0% / 0.3);
   }
@@ -124,7 +124,7 @@
   }
 
   .text-gradient-blue {
-    background: linear-gradient(135deg, hsl(210 100% 45%) 0%, hsl(210 100% 65%) 100%);
+    background: linear-gradient(135deg, hsl(270 65% 40%) 0%, hsl(42 90% 55%) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -147,7 +147,7 @@
   }
 
   .glow-blue {
-    box-shadow: 0 0 40px hsl(210 100% 50% / 0.4), 0 0 80px hsl(210 100% 50% / 0.2);
+    box-shadow: 0 0 40px hsl(270 70% 45% / 0.4), 0 0 80px hsl(42 90% 55% / 0.2);
   }
 }
 
@@ -162,14 +162,14 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background: hsl(210 40% 98%);
+  background: hsl(270 30% 97%);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: hsl(210 100% 45%);
+  background: hsl(270 65% 40%);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: hsl(210 100% 55%);
+  background: hsl(270 70% 50%);
 }
